@@ -1,6 +1,6 @@
-from WordProvider import WordProvider
-from GuessJudge import GuessJudge
-from CliView import CliView
+#from WordProvider import WordProvider
+#from GuessJudge import GuessJudge
+#from CliView import CliView
 
 class GameCore:
     def __init__(self):
