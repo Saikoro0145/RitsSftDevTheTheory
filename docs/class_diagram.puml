@@ -9,29 +9,30 @@ class GameCore {
   -judge: GuessJudge
   -view: CliView
   -answer: str
+  +Main(): void
 }
 
 class GuessJudge {
-  +judge(answer: str, guess: str): GuessResult
+  +Judge(answer: str, guess: str): GuessResult
 }
 
 class GuessResult {
   -hits: int
   -blows: int
-  +getHits(): int
-  +getBlows(): int
+  +GetHits(): int
+  +GetBlows(): int
 }
 
 class WordProvider {
-  +getAnswer(): str
+  +GetAnswer(): str
 }
 
 Interface View {
-  +showStart(): void
-  +readGuess(): str
-  +showGuessResult(result: GuessResult): void
-  +showSuccess(): void
-  +showError(message: str): void
+  +ShowStart(): void
+  +ReadGuess(): str
+  +ShowGuessResult(result: GuessResult): void
+  +ShowSuccess(): void
+  +ShowError(message: str): void
 }
 
 class CliView {}
